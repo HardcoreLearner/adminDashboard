@@ -189,14 +189,27 @@ main {
 
 .projects {
     grid-area: 1 / 1 / 3 / 2;
+    display: flex;
+    flex-direction: column;
 }
+
+.projectContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
 
 .announcements {
     grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    flex-direction: column;
 }
 
 .trending {
     grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    flex-direction: column;
 }
 
 .mainTitle {
