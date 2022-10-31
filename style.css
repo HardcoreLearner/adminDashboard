@@ -195,10 +195,46 @@ main {
 
 .projectContent {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
+.projectCard {
+    border: 3px;
+    border-left-color: var(--third-color);
+    border-radius: 5px;
+    background-color: var(--fourth-color);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border-left: var(--third-color) 5px solid;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.text h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.text p {
+    margin-top: 0px;
+    font-size: 15px;
+    color: grey;
+}
+
+
+.action {
+    align-self: flex-end;
+    justify-self: ;
+}
+
+.action img {
+    margin-right: 20px;
+}
 
 .announcements {
     grid-area: 1 / 2 / 2 / 3;
@@ -214,4 +250,5 @@ main {
 
 .mainTitle {
     font-size: 15px;
+    margin-bottom: 10px;
 }
