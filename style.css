@@ -12,8 +12,8 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 6fr;
     width: 100vw;
     height: 100vh;
 }
@@ -63,7 +63,116 @@ header {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     background-color: var(--fourth-color);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
 }
+
+header .logo {
+    width: 50px;
+}
+
+header p, header h1, header img {
+    display: inline;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.firstPart {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    margin-right: 10px;
+    
+}
+
+.firstPart input {
+    flex-grow: 1;
+    border-radius: 12px;
+    background-color: var(--second-color);
+    border: 0px;
+}
+
+.firstPart img {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.secondPart {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    align-items: center;
+}
+
+.secondPart .logo {
+    width: 35px;
+}
+
+.alarm {
+    margin-left: 20px;
+}
+
+.secondPart .name {
+    margin-right: 20px;
+}
+
+.greeting {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.greetingFirst {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    gap: 10px;
+}
+
+.greetingFirst img {
+    margin-left: 20px;
+    margin-right: 5px;
+    width: 60px;
+}
+
+.greetingFirst h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.greetingFirst p {
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+}
+
+.greetingSecond {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.greetingSecond button {
+    background-color: var(--main-color);
+    border-radius: 15px;
+    color: #ffffff;
+    border: 0px;
+    width: 150px;
+    height: auto;
+    font-size: 20px;
+    margin-right: 15px;
+    padding: 5px;
+}
+
 
 main {
     grid-column: 2 / 3;
