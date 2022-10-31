@@ -213,6 +213,7 @@ main {
 .text {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .text h3 {
@@ -229,7 +230,6 @@ main {
 
 .action {
     align-self: flex-end;
-    justify-self: ;
 }
 
 .action img {
