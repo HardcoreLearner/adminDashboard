@@ -1,5 +1,5 @@
 :root {
-    --main-color:#1992d4;
+    --main-color:#084c61;
     --second-color:#e2e8f0;
     --third-color: #ff4050;
     --fourth-color:#ffffff;
@@ -37,8 +37,9 @@ aside img {
     display: flex;
     color: var(--fourth-color);
     align-items: center;
-    justify-content: center;
     font-size: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
 .navigation, .account {
@@ -77,14 +78,14 @@ header p, header h1, header img {
 }
 
 .search {
+    margin-left: 30px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .firstPart {
     display: flex;
     align-items: center;
-    justify-content: baseline;
     margin-right: 10px;
     
 }
@@ -94,6 +95,7 @@ header p, header h1, header img {
     border-radius: 12px;
     background-color: var(--second-color);
     border: 0px;
+    height: 25px;
 }
 
 .firstPart img {
@@ -103,24 +105,28 @@ header p, header h1, header img {
 
 .secondPart {
     display: flex;
-    justify-content: space-between;
     font-weight: bold;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .secondPart .logo {
     width: 35px;
+    margin-left: 20px;
 }
 
 .alarm {
     margin-left: 20px;
+
 }
 
 .secondPart .name {
-    margin-right: 20px;
+    margin-right: 100px;
+    margin-left: 20px;
 }
 
 .greeting {
+    margin-left: 30px;
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
@@ -158,7 +164,8 @@ header p, header h1, header img {
 .greetingSecond {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    margin-right: 70px;
 }
 
 .greetingSecond button {
@@ -182,9 +189,15 @@ main {
 
 .mainContent {
     display: grid;
-    grid-template: 1fr 1fr / 3fr 1fr;
+    grid-template-columns: 3fr 1fr;
     margin: 40px;
     gap: 25px;
+}
+
+.mainTitle {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .projects {
@@ -195,19 +208,20 @@ main {
 
 .projectContent {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
 }
 
 .projectCard {
     border: 3px;
     border-left-color: var(--third-color);
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: var(--fourth-color);
     padding: 15px;
     display: flex;
     flex-direction: column;
-    border-left: var(--third-color) 5px solid;
+    border-left: var(--third-color) 10px solid;
+    height: 150px;
 }
 
 .text {
@@ -242,13 +256,70 @@ main {
     flex-direction: column;
 }
 
+.announcementsContent {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.announcementsContent div:nth-child(2){
+    border-top: #e2e8f0 2px solid;
+    border-bottom: #e2e8f0 2px solid;
+}
+
+.announcementCard h4 {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.announcementCard p {
+    font-size: 12px;
+    color: grey;
+    margin-top: 0;
+}
+
 .trending {
     grid-area: 2 / 2 / 3 / 3;
     display: flex;
     flex-direction: column;
 }
 
-.mainTitle {
+.trending img {
+    width: 35px;
+    margin-right: 15px;
+
+}
+
+.trendingContent {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.trendingCard {
+    display: flex;
+    padding: 10px;
+}
+
+.trendingCard h4 {
     font-size: 15px;
-    margin-bottom: 10px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.trendingCard p {
+    font-size: 15px;
+    margin: 0;
+    color: grey;
+}
+
+.trendingText {
+    display: flex;
+    flex-direction: column;
 }
